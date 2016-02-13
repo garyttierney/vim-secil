@@ -16,6 +16,10 @@ syntax keyword secilKeyword sensitivity sensitivityorder sensitivitycategory
 syntax keyword secilKeyword user userrange userlevel userrole
 syntax keyword secilKeyword sidcontext context filecon
 
+"" Match string literals in the case of e.g., a path to filecon
+
+syntax region secilString start=/\v"/ skip=/\v\\./ end=/\v"/
+
 "" Define constants such as true and false
 
 syntax keyword secilConstant true false
@@ -28,6 +32,7 @@ syntax keyword secilMacro macro
 
 syntax match secilComment "^;.*$"
 
+highlight link secilString String
 highlight link secilConstant Constant
 highlight link secilComment Comment
 highlight link secilKeyword Keyword
