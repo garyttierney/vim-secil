@@ -14,7 +14,9 @@ syntax keyword secilKeyword category categoryset
 syntax keyword secilKeyword mls mlsconstrain
 syntax keyword secilKeyword sensitivity sensitivityorder sensitivitycategory
 syntax keyword secilKeyword user userrange userlevel userrole
-syntax keyword secilKeyword sidcontext context filecon
+syntax keyword secilKeyword sid sidcontext context filecon
+syntax keyword secilKeyword allow allowx auditallow 
+syntax keyword secilKeyword call
 
 "" Match string literals in the case of e.g., a path to filecon
 
