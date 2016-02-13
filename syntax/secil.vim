@@ -17,9 +17,9 @@ syntax keyword secilKeyword user userrange userlevel userrole
 syntax keyword secilMacro macro
 
 "" Match line comments
-syntax match secilComment "\v;.*$"
+syntax match secilComment "^;.*$"
 
-highlight link potionComment Comment
+highlight link secilComment Comment
 highlight link secilKeyword Keyword
 highlight link secilMacro Function
 
