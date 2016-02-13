@@ -15,6 +15,10 @@ syntax keyword secilKeyword mls mlsconstrain
 syntax keyword secilKeyword sensitivity sensitivityorder sensitivitycategory
 syntax keyword secilKeyword user userrange userlevel userrole
 
+"" Define constants such as true and false
+
+syntax keyword secilConstant true false
+
 "" Make a distinction between regular keywords and macro definitions
 
 syntax keyword secilMacro macro
@@ -22,6 +26,7 @@ syntax keyword secilMacro macro
 "" Match line comments
 syntax match secilComment "^;.*$"
 
+highlight link secilConstant Constant
 highlight link secilComment Comment
 highlight link secilKeyword Keyword
 highlight link secilMacro Function
