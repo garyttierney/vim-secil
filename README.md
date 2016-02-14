@@ -14,6 +14,8 @@ Plugin 'garyttierney/vim-secil'
 
 If you use the ctags options included in the etc/ directory vim will allow you to jump to definitions of macros and block namespaces using the usual tag navigation commands and hotkeys.
 
+There is also a simple function named secil#GoToCurrentNamespace() which will find the current block you are in (using the `in` symbol) and navigate to its definition.
+
 ## TODO
 
 [ ] - Use tagslist from vimscript for better navigation
