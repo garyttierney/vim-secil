@@ -1,0 +1,4 @@
+--langdef=secil
+--langmap=secil:.cil
+--regex-secil="/^[\s\t]*\(block ([a-z_]+)[\s\t]*/\1/b,block/i"
+--regex-secil="/^[\s\t]*\(macro ([a-z_]+)[\s\t]*/\1/m,macro/i"
