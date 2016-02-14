@@ -1,5 +1,22 @@
 # vim-secil
 
-This is a plugin for working with SELinux CIL policy language.
+This is a vim plugin for working with SELinux CIL policy language. At the moment it provides simple syntax highlighting for CIL policy.
 
-# TODO: an actual readme
+## Installation
+
+Using vundle, simply place the following in your .vimrc:
+
+```
+Plugin 'garyttierney/vim-secil'
+```
+
+## Usage
+
+If you use the ctags options included in the etc/ directory vim will allow you to jump to definitions of macros and block namespaces using the usual tag navigation commands and hotkeys.
+
+## TODO
+
+[ ] - Use tagslist from vimscript for better navigation
+[ ] - Allow jumping to current namespace using tags
+[ ] - Investigate integration with tagbar
+
